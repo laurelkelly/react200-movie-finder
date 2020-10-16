@@ -28,7 +28,7 @@ const url = 'http://localhost:8888';
 // });
 
 describe('Movie Finder', function main() {
-  this.timeout(12000);
+  this.timeout(50000);
   this.slow(4000);
 
   beforeEach(() => {
@@ -147,7 +147,7 @@ describe('express', () => {
       .then((text) => {
         expect(text).to.equal('Movie Finder');
       })
-  ).timeout(12000);
+  ).timeout(50000);
 
   it('returns the correct status code', () => axios.get(url)
     .then(response => expect(response.status === 200)));
