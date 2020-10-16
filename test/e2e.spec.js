@@ -27,7 +27,7 @@ const url = 'http://localhost:8888';
 //   });
 // });
 
-describe('Movie Finder', function main() {
+/* describe('Movie Finder', function main() {
   this.timeout(50000);
   this.slow(4000);
 
@@ -122,7 +122,7 @@ describe('Movie Finder', function main() {
     //   expect(text).to.equal('More Information');
     // })
   );
-});
+}); */
 
 
 describe('Array', function() {
@@ -139,7 +139,7 @@ describe('express', () => {
     nightmare = new Nightmare();
   });
 
-  it('should have the correct page title', () =>
+/*   it('should have the correct page title', () =>
     nightmare
       .goto(url)
       .evaluate(() => document.querySelector('h1').innerText)
@@ -147,7 +147,7 @@ describe('express', () => {
       .then((text) => {
         expect(text).to.equal('Movie Finder');
       })
-  ).timeout(50000);
+  ).timeout(50000); */
 
   it('returns the correct status code', () => axios.get(url)
     .then(response => expect(response.status === 200)));
