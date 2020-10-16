@@ -30,7 +30,6 @@ class MovieSearchContainer extends React.Component {
         return (
             <div>
                 <h1 className='text-center p-3'>Movie Finder</h1>
-                <p>Test 3</p>
                 <MovieInput handleSubmit={this.handleSubmit} />
                 <MovieList onClick={this.onClick} searchResultsArray={this.props.movie.searchResultsArray} />
             </div>
