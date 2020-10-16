@@ -29,6 +29,9 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'file?name=[name].[ext]',
+        options: {
+          plugins: ['@babel/plugin-proposal-optional-chaining']
+        }
       },
     ],
   },
